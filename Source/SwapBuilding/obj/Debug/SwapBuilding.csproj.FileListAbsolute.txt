@@ -1,0 +1,4 @@
+E:\Steam\steamapps\common\RimWorld\Mods\gene-forge\Source\SwapBuilding\obj\Debug\SwapBuilding.csproj.AssemblyReference.cache
+E:\Steam\steamapps\common\RimWorld\Mods\gene-forge\Source\SwapBuilding\obj\Debug\SwapBuilding.csproj.CoreCompileInputs.cache
+E:\Steam\steamapps\common\RimWorld\Mods\gene-forge\Assemblies\SwapBuilding.dll
+E:\Steam\steamapps\common\RimWorld\Mods\gene-forge\Source\SwapBuilding\obj\Debug\SwapBuilding.dll

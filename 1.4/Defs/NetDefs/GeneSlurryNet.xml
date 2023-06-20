@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<PipeSystem.PipeNetDef>
+		<defName>GF_GeneSlurryNet</defName>
+		<transferAmount>100</transferAmount>
+		<convertAmount>-1</convertAmount>
+		<noStorageAlert>true</noStorageAlert>
+		<resource>
+			<name>Gene Slurry</name>
+			<unit>gene slurry</unit>
+			<color>(0.8, 0.4, 0.7)</color>
+			<onlyShowStored>True</onlyShowStored>
+			<offTexPath>Things/Item/Resource/GeneSlurrySymbol</offTexPath>
+		</resource>
+		<pipeDefs>
+			<li>GF_GeneSlurryPipe</li>
+			<li>GF_UndergroundGeneSlurryPipe</li>
+		</pipeDefs>
+		<designator>
+			<deconstructIconPath>Things/Building/Linked/GeneSlurryPipes/GeneSlurryPipes_Deconstruct</deconstructIconPath>
+			<designationCategoryDef>Biotech</designationCategoryDef>
+		</designator>
+		<overlayOptions>
+			<overlayColor>(0.8, 0.4, 0.7)</overlayColor>
+		</overlayOptions>
+		<linkToRefuelables>
+		<li>
+			<thing>GeneSlurry</thing>
+			<ratio>1</ratio>
+		</li>
+		</linkToRefuelables>
+	</PipeSystem.PipeNetDef>
+</Defs>

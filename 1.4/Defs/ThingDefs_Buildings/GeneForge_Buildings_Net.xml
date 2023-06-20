@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ThingDef ParentName="BuildingBase">
+		<defName>GF_GeneSlurryPipe</defName>
+		<label>gene slurry pipe</label>
+		<description>Pipes Gene Slurry</description>
+		<thingClass>PipeSystem.Building_Pipe</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Building/Linked/GeneSlurryPipes/GeneSlurryPipes_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>Basic</linkType>
+			<!-- Any of the custom link flag. Only used so blueprint connect to buildings -->
+			<linkFlags>
+				<li>Custom7</li>
+			</linkFlags>
+			<damageData>
+				<rect>(0,0.35,1,0.3)</rect>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Linked/GeneSlurryPipes/GeneSlurryPipes_MenuIcon</uiIconPath>
+		<uiIconScale>0.7</uiIconScale>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<isInert>true</isInert>
+			<isEdifice>false</isEdifice>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Linked/GeneSlurryPipes/GeneSlurryPipes_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
+		</building>
+		<drawerType>MapMeshOnly</drawerType>
+		<altitudeLayer>Conduits</altitudeLayer>
+		<passability>Standable</passability>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<researchPrerequisites>
+		  <li>GeneForging</li>
+		</researchPrerequisites>
+		<statBases>
+			<MaxHitPoints>40</MaxHitPoints>
+			<WorkToBuild>35</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<costList>
+			<Steel>4</Steel>
+			<Silver>1</Silver>
+		</costList>
+		<comps>
+			<li Class="PipeSystem.CompProperties_Resource">
+				<pipeNet>GF_GeneSlurryNet</pipeNet>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PipeSystem.PlaceWorker_Pipe</li>
+		</placeWorkers>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Biotech</designationCategory>
+		<constructEffect>ConstructMetal</constructEffect>
+		<clearBuildingArea>false</clearBuildingArea>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>GF_UndergroundGeneSlurryPipe</defName>
+		<label>underground gene slurry pipe</label>
+		<description>Pipes Gene Slurry Underground</description>
+		<thingClass>PipeSystem.Building_Pipe</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>UI/CSG/IConduit</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>Basic</linkType>
+			<!-- Any of the custom link flag. Only used so blueprint connect to buildings -->
+			<linkFlags>
+				<li>Custom7</li>
+			</linkFlags>
+			<damageData>
+				<rect>(0,0.35,1,0.3)</rect>
+			</damageData>
+		</graphicData>
+		<researchPrerequisites>
+		  <li>GeneForging</li>
+		</researchPrerequisites>
+		<uiIconPath>Things/Building/Linked/GeneSlurryPipes/GeneSlurryPipes_MenuIcon</uiIconPath>
+		<uiIconScale>0.7</uiIconScale>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<isInert>true</isInert>
+			<isEdifice>false</isEdifice>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Linked/GeneSlurryPipes/GeneSlurryPipes_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
+		</building>
+		<drawerType>MapMeshOnly</drawerType>
+		<altitudeLayer>Conduits</altitudeLayer>
+		<passability>Standable</passability>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<statBases>
+			<MaxHitPoints>40</MaxHitPoints>
+			<WorkToBuild>35</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<costList>
+			<Steel>4</Steel>
+			<Silver>1</Silver>
+		</costList>
+		<comps>
+			<li Class="PipeSystem.CompProperties_Resource">
+				<pipeNet>GF_GeneSlurryNet</pipeNet>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PipeSystem.PlaceWorker_Pipe</li>
+		</placeWorkers>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Biotech</designationCategory>
+		<constructEffect>ConstructMetal</constructEffect>
+		<clearBuildingArea>false</clearBuildingArea>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>GF_GeneSlurryValve</defName>
+		<label>gene slurry valve</label>
+		<description>Switches Gene Slurry flow on/off.</description>
+		<thingClass>PipeSystem.Building_PipeValve</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Building/Linked/GeneSlurryValve/GeneSlurryValve</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<allowWireConnection>false</allowWireConnection>
+		</building>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Standable</passability>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<researchPrerequisites>
+		  <li>GeneForging</li>
+		</researchPrerequisites>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToBuild>200</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>-2</Beauty>
+		</statBases>
+		<placingDraggableDimensions>0</placingDraggableDimensions>
+		<costList>
+			<Steel>15</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Silver>5</Silver>
+		</costList>
+		<comps>
+			<li Class="PipeSystem.CompProperties_PipeValve">
+				<pipeNet>GF_GeneSlurryNet</pipeNet>
+				<alwaysLinkToPipes>true</alwaysLinkToPipes>
+			</li>
+			<li Class="CompProperties_Flickable">
+				<commandTexture>Things/UI/ValveOnOff</commandTexture>
+				<commandLabelKey>Switch gene slurry valve on/off</commandLabelKey>
+				<commandDescKey>Switches gene slurry flow on/off. A pawn will come open/close the valve.</commandDescKey>
+			</li>
+		</comps>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<tickerType>Normal</tickerType>
+		<designationCategory>Biotech</designationCategory>
+		<constructEffect>ConstructMetal</constructEffect>
+	</ThingDef>
+</Defs>

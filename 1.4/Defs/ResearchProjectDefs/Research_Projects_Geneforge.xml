@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>GeneForging</defName>
+    <label>gene forging</label>
+    <description>Construct a Gene Forge in order to randomly generate new genepacks.</description>
+    <techLevel>Spacer</techLevel>
+    <baseCost>1500</baseCost>
+    <researchViewX>12.00</researchViewX>
+    <researchViewY>5.80</researchViewY>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	<requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <prerequisites>
+      <li>GeneProcessor</li>
+    </prerequisites>
+  </ResearchProjectDef>
+</Defs>

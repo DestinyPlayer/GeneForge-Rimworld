@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <ThingDef ParentName="FurnitureBase">
+    <defName>GF_GeneSlurryExtractorCorpse</defName>
+    <label>gene slurry extractor</label>
+    <description>This apparatus extracts Genetic Slurry from humanoid corpses and humanoid meat.</description>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Things/Building/GeneSlurryExtractor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <allowFlip>false</allowFlip>
+    </graphicData>
+	<rotatable>false</rotatable>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <!-- <altitudeLayer>Building</altitudeLayer> -->
+    <passability>Standable</passability>
+    <!-- <passability>PassThroughOnly</passability> -->
+    <fillPercent>0.5</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <pathCost>50</pathCost>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>8</Mass>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>0.5</Beauty>
+    </statBases>
+	<researchPrerequisites>
+		<li>GeneForging</li>
+	</researchPrerequisites>
+    <costList>
+      	<Steel>50</Steel>
+		<Silver>25</Silver>
+		<ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <filter>
+          <disallowNotEverStorable>true</disallowNotEverStorable>
+		  <categories>
+		    <li>Corpses</li>
+		  </categories>
+		  <specialFiltersToDisallow>
+			<li>AllowRotten</li>
+		  </specialFiltersToDisallow>
+		  <disallowedCategories>
+            <li>CorpsesMechanoid</li>
+            <li>CorpsesAnimal</li>
+          </disallowedCategories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <disallowNotEverStorable>true</disallowNotEverStorable>
+		  <specialFiltersToAllow>
+			<li>AllowCorpsesColonist</li>
+		    <li>AllowCorpsesStranger</li>
+		  </specialFiltersToAllow>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <designationCategory>Biotech</designationCategory>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+    <canOverlapZones>false</canOverlapZones>
+    <comps>
+      <li Class="PipeSystem.CompProperties_ConvertThingToResource">
+        <pipeNet>GF_GeneSlurryNet</pipeNet>
+        <thing>Corpse_Human</thing>
+		<ratio>1</ratio>
+      </li>
+	  <li Class="CompProperties_Power">
+		<compClass>CompPowerTrader</compClass>
+		<basePowerConsumption>100</basePowerConsumption>
+	  </li>
+	  <li Class="CompProperties_Flickable"/>
+	  <li Class="CompPropertiesSwapBuilding_GF">
+	    <buttonName>Mode: Corpses</buttonName>
+		<buttonDescription>The Extractor is currently set to consume humanoid corpses. Click to switch to consuming humanoid meat.</buttonDescription>
+		<buildingSwap>GF_GeneSlurryExtractorMeat</buildingSwap>
+		<uiIconPath>Things/UI/GeneExtractorCorpse</uiIconPath>
+	  </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="FurnitureBase">
+    <defName>GF_GeneSlurryExtractorMeat</defName>
+    <label>gene slurry extractor</label>
+    <description>This apparatus extracts Genetic Slurry from humanoid corpses and humanoid meat.</description>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Things/Building/GeneSlurryExtractor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <allowFlip>false</allowFlip>
+    </graphicData>
+	<rotatable>false</rotatable>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <!-- <altitudeLayer>Building</altitudeLayer> -->
+    <passability>Standable</passability>
+    <!-- <passability>PassThroughOnly</passability> -->
+    <fillPercent>0.5</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <pathCost>50</pathCost>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>8</Mass>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>0.5</Beauty>
+    </statBases>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <filter>
+          <disallowNotEverStorable>true</disallowNotEverStorable>
+		  <thingDefs>
+		    <li>Meat_Human</li>
+		  </thingDefs>
+		  <specialFiltersToDisallow>
+			<li>AllowRotten</li>
+		  </specialFiltersToDisallow>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <disallowNotEverStorable>true</disallowNotEverStorable>
+          <thingDefs>
+			<li>Meat_Human</li>
+          </thingDefs>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+	<inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+    <canOverlapZones>false</canOverlapZones>
+    <comps>
+      <li Class="PipeSystem.CompProperties_ConvertThingToResource">
+        <pipeNet>GF_GeneSlurryNet</pipeNet>
+        <thing>Meat_Human</thing>
+		<ratio>75</ratio>
+      </li>
+	  <li Class="CompProperties_Power">
+		<compClass>CompPowerTrader</compClass>
+		<basePowerConsumption>100</basePowerConsumption>
+	  </li>
+	  <li Class="CompProperties_Flickable"/>
+	  <li Class="CompPropertiesSwapBuilding_GF">
+	    <buttonName>Mode: Meat</buttonName>
+		<buttonDescription>The Extractor is currently set to consume humanoid meat. Click to switch to consuming humanoid corpses.</buttonDescription>
+		<buildingSwap>GF_GeneSlurryExtractorCorpse</buildingSwap>
+		<uiIconPath>Things/UI/GeneExtractorMeat</uiIconPath>
+	  </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="BenchBase">
+	<defName>GeneSlurryForge</defName>
+	<label>Gene Forge</label>
+	<description>This is where the magic happens. Gene slurry goes through a myriad of complex procedures that then proceed to create a new gene pack! Satisfaction not guaranteed.</description>
+	<thingClass>Building_WorkTable</thingClass>
+    <canOverlapZones>false</canOverlapZones>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.3</fillPercent>
+	<researchPrerequisites>
+		<li>GeneForging</li>
+	</researchPrerequisites>
+    <graphicData>
+      <texPath>Things/Building/GeneSlurryForge</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,1.4)</drawSize>
+      <drawOffset>(0,0,0.1)</drawOffset>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.20</staticSunShadowHeight>
+    <altitudeLayer>Building</altitudeLayer>
+	<useHitPoints>True</useHitPoints>
+    <designationCategory>Biotech</designationCategory>
+	<hasInteractionCell>True</hasInteractionCell>
+    <uiOrder>2430</uiOrder>
+	<pathCost>50</pathCost>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>4000</WorkToBuild>
+      <Mass>25</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <size>(3,1)</size>
+    <costList>
+      <Steel>200</Steel>
+	  <Silver>100</Silver>
+      <ComponentIndustrial>5</ComponentIndustrial>
+	  <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+	<building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+	<surfaceType>Item</surfaceType>
+	<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+	<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+	<placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+	<comps>
+	  <li Class="CompProperties_Power">
+		<compClass>CompPowerTrader</compClass>
+		<basePowerConsumption>500</basePowerConsumption>
+	  </li>
+	  <li Class="CompProperties_Flickable"/>
+	  <li Class="CompProperties_Breakdownable"/>
+	  <li Class="PipeSystem.CompProperties_RefillWithPipes">
+		  <pipeNet>GF_GeneSlurryNet</pipeNet>
+		  <thing>GeneSlurry</thing>
+	  </li>
+	  <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>500.0</fuelConsumptionRate>
+        <fuelCapacity>4.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>GeneSlurry</li>
+          </thingDefs>
+        </fuelFilter>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+      </li>
+	</comps>
+  </ThingDef>
+</Defs>

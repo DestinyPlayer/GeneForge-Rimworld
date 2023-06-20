@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ThingDef ParentName="BuildingBase">
+		<defName>GF_GeneSlurryTank</defName>
+		<label>gene slurry tank</label>
+		<description>A small tank thah stores up to 10 liters of gene slurry. Requires a bit of power to keep it cold.</description>
+		<graphicData>
+			<texPath>Things/Building/GeneSlurryTank</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(0.9,1.2)</drawSize>
+			<drawOffset>(0,0,0.3)</drawOffset>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToBuild>800</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(1,1)</size>
+		<costList>
+			<Steel>50</Steel>
+			<Silver>20</Silver>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<researchPrerequisites>
+		  <li>GeneForging</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="PipeSystem.CompProperties_ResourceStorage">
+				<!-- Accept a PipeNetDef -->
+				<pipeNet>GF_GeneSlurryNet</pipeNet>
+				<drawStorageBar>False</drawStorageBar>
+				<!-- Amount that can be stored -->
+				<storageCapacity>10</storageCapacity>
+				<refillOptions>
+					<!-- If true, will always be refilled by pawns. -->
+					<!-- If false, allow user to enable/disable tank refill -->
+					<alwaysRefill>true</alwaysRefill>
+					<!-- Number of ticks needed to refill -->
+					<refillTime>150</refillTime>
+					<!-- Thing to refill with -->
+					<thing>GeneSlurry</thing>
+					<!-- 1 used, 1*X more in the grid -->
+					<ratio>1</ratio>
+				</refillOptions>
+				<extractOptions>
+					<!-- Extract gizmo icon -->
+					<texPath>Things/Item/Resource/GeneSlurry</texPath>
+					<!-- Those need to be translation key -->
+					<labelKey>Extract Gene Slurry</labelKey>
+					<descKey>Extract gene slurry from the storage tank.</descKey>
+					<!-- The amount extracted -->
+					<extractAmount>1</extractAmount>
+					<!-- The amount of ticks it take to extract-->
+					<extractTime>150</extractTime>
+					<!-- The thing spawned after extract -->
+					<thing>GeneSlurry</thing>
+					<!-- 1 spawned, 1*X less in the grid -->
+					<ratio>1</ratio>
+				</extractOptions>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>100</basePowerConsumption>
+			</li>
+		</comps>
+		<tickerType>Rare</tickerType>
+		<rotatable>false</rotatable>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<designationCategory>Biotech</designationCategory>
+		<staticSunShadowHeight>0.2</staticSunShadowHeight>
+		<constructEffect>ConstructMetal</constructEffect>
+		<canOverlapZones>false</canOverlapZones>
+	</ThingDef>
+	<ThingDef ParentName="BuildingBase">
+		<defName>GF_GeneSlurryBigTank</defName>
+		<label>big gene slurry tank</label>
+		<description>A big tank thah stores up to 60 liters of gene slurry. Requires a bit of power to keep it cold.</description>
+		<graphicData>
+			<texPath>Things/Building/GeneSlurryBigTank</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.9,2.2)</drawSize>
+			<drawOffset>(0,0,0.3)</drawOffset>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<researchPrerequisites>
+		  <li>GeneForging</li>
+		</researchPrerequisites>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>1600</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(2,2)</size>
+		<costList>
+			<Steel>200</Steel>
+			<Silver>100</Silver>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<comps>
+			<li Class="PipeSystem.CompProperties_ResourceStorage">
+				<!-- Accept a PipeNetDef -->
+				<pipeNet>GF_GeneSlurryNet</pipeNet>
+				<drawStorageBar>False</drawStorageBar>
+				<!-- Amount that can be stored -->
+				<storageCapacity>60</storageCapacity>
+				<refillOptions>
+					<!-- If true, will always be refilled by pawns. -->
+					<!-- If false, allow user to enable/disable tank refill -->
+					<alwaysRefill>true</alwaysRefill>
+					<!-- Number of ticks needed to refill -->
+					<refillTime>150</refillTime>
+					<!-- Thing to refill with -->
+					<thing>GeneSlurry</thing>
+					<!-- 1 used, 1*X more in the grid -->
+					<ratio>1</ratio>
+				</refillOptions>
+				<extractOptions>
+					<!-- Extract gizmo icon -->
+					<texPath>Things/Item/Resource/GeneSlurry</texPath>
+					<!-- Those need to be translation key -->
+					<labelKey>Extract Gene Slurry</labelKey>
+					<descKey>Extract gene slurry from the storage tank.</descKey>
+					<!-- The amount extracted -->
+					<extractAmount>1</extractAmount>
+					<!-- The amount of ticks it take to extract-->
+					<extractTime>150</extractTime>
+					<!-- The thing spawned after extract -->
+					<thing>GeneSlurry</thing>
+					<!-- 1 spawned, 1*X less in the grid -->
+					<ratio>1</ratio>
+				</extractOptions>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>300</basePowerConsumption>
+			</li>
+		</comps>
+		<tickerType>Rare</tickerType>
+		<rotatable>false</rotatable>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<designationCategory>Biotech</designationCategory>
+		<staticSunShadowHeight>0.2</staticSunShadowHeight>
+		<constructEffect>ConstructMetal</constructEffect>
+		<canOverlapZones>false</canOverlapZones>
+	</ThingDef>
+</Defs>

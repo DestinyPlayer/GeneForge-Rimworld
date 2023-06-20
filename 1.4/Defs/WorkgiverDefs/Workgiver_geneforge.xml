@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	  <WorkGiverDef>
+		<defName>DoBillsGeneforge</defName>
+		<label>forge genes</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>95</priorityInType>
+		<fixedBillGiverDefs>
+			<li>GeneSlurryForge</li>
+		</fixedBillGiverDefs>
+		<workTags>
+			<li>Intellectual</li>
+		</workTags>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<verb>gene forge</verb>
+		<gerund>gene forging</gerund>
+	  </WorkGiverDef>
+</Defs>

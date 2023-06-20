@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<RecipeDef>
+		<defName>ForgeGenePack</defName>
+		<label>forge genepack</label>
+		<recipeUsers>
+            <li>GeneSlurryForge</li>
+        </recipeUsers>
+		<description>Forges a gene pack out of naught but Gene Slurry and a random can!</description>
+		<jobString>Gene forging.</jobString>
+		<workAmount>100</workAmount>
+		<workSkill>Intellectual</workSkill>
+		<skillRequirements>
+			<Intellectual>6</Intellectual>
+		</skillRequirements>
+		<effectWorking>Surgery</effectWorking>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<products>
+			<Genepack>1</Genepack>
+		</products>
+	</RecipeDef>
+	<RecipeDef MayRequire="wvc.sergkart.races.biotech">
+		<defName>ForgeWYCGenePack</defName>
+		<label>forge WYC genepack</label>
+		<recipeUsers>
+            <li>GeneSlurryForge</li>
+        </recipeUsers>
+		<description>Forges a WYC gene pack out of naught but Gene Slurry and a random can!</description>
+		<jobString>Gene forging.</jobString>
+		<workAmount>100</workAmount>
+		<workSkill>Intellectual</workSkill>
+		<skillRequirements>
+			<Intellectual>6</Intellectual>
+		</skillRequirements>
+		<effectWorking>Surgery</effectWorking>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<products>
+			<WVC_Genepack>1</WVC_Genepack>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef MayRequire="sarg.alphagenes">
+		<defName>ForgeAlphaGenePack</defName>
+		<label>forge alphapack</label>
+		<recipeUsers>
+            <li>GeneSlurryForge</li>
+        </recipeUsers>
+		<description>Forges an alpha gene pack out of naught but Gene Slurry and a random can!</description>
+		<jobString>Gene forging.</jobString>
+		<workAmount>100</workAmount>
+		<workSkill>Intellectual</workSkill>
+		<skillRequirements>
+			<Intellectual>6</Intellectual>
+		</skillRequirements>
+		<effectWorking>Surgery</effectWorking>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<products>
+			<AG_Alphapack>1</AG_Alphapack>
+		</products>
+	</RecipeDef>
+</Defs>
+
+
+
+

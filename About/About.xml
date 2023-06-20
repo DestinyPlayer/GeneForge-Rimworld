@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Gene Forge - Make Genepacks with slurry</name>
+	<author>thenextdecade </author>
+	<packageId>tnd.geneforge</packageId>
+	<supportedVersions>
+		<li> 1.4 </li>
+	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>oskarpotocki.vanillafactionsexpanded.core</packageId>
+			<displayName>Vanilla Expanded Framework</displayName>
+			<downloadUrl>https://steamcommunity.com/workshop/filedetails/?id=2023507013</downloadUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>oskarpotocki.vanillafactionsexpanded.core</li>
+	</loadAfter>
+	<description>
+This mod adds a system that allows you to create Genepacks via a fluid.
+
+I like being able to make things at home instead of having to depend on adventuring or trading, and genepacks have been a major pain in the ass for me.
+
+So I made this.
+	</description>
+</ModMetaData>

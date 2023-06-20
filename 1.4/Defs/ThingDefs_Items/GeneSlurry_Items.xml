@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef>
+		<defName>GeneSlurry</defName>
+		<label>geneslurry</label>
+		<thingClass>ThingWithComps</thingClass>
+		<description>A tank containing some Genetic Slurry, used for producing genepacks in the Gene Forge.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/GeneSlurry</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>0.5</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<thingCategories>
+			<li>ItemsMisc</li>
+		</thingCategories>
+		<stackLimit>25</stackLimit>
+		<category>Item</category>
+		<drawerType>MapMeshOnly</drawerType>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<selectable>true</selectable>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>true</alwaysHaulable>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<rotatable>false</rotatable>
+		<pathCost>14</pathCost>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+	</ThingDef>
+</Defs>
