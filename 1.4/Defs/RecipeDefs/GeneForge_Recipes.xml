@@ -88,8 +88,34 @@
 			<AG_Alphapack>1</AG_Alphapack>
 		</products>
 	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>ForgeArchiteGenePack</defName>
+		<label>forge archite genepack</label>
+		<recipeUsers>
+            <li>GeneSlurryForge</li>
+        </recipeUsers>
+		<description>Forges an archite gene pack out of naught but Gene Slurry and a random can!</description>
+		<jobString>Gene forging.</jobString>
+		<workAmount>100</workAmount>
+		<workSkill>Intellectual</workSkill>
+		<skillRequirements>
+			<Intellectual>6</Intellectual>
+		</skillRequirements>
+		<effectWorking>Surgery</effectWorking>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<products>
+			<GF_ArchiteGenepack>1</GF_ArchiteGenepack>
+		</products>
+	</RecipeDef>
 </Defs>
-
-
-
-

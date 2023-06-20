@@ -31,4 +31,31 @@
 			<li Class="CompProperties_Forbiddable"/>
 		</comps>
 	</ThingDef>
+	
+	<ThingDef ParentName="GeneSetHolderBase">
+		<defName>GF_ArchiteGenepack</defName>
+		<label>geneforged archite genepack</label>
+		<description>A small capsule containing a package of genetic information. To use a genepack, it must be placed in a gene bank near a gene assembler and combined into an implantable xenogerm.\n\nIf not kept in a powered gene bank, this genepack will slowly deteriorate.\n\nThis genepack has been deliberately Geneforged in order to produce an Archite gene.</description>
+		<thingClass>Genepack</thingClass>
+		<tickerType>Rare</tickerType>
+		<useHitPoints>true</useHitPoints>
+		<canDeteriorateUnspawned>true</canDeteriorateUnspawned>
+		<deteriorateFromEnvironmentalEffects>false</deteriorateFromEnvironmentalEffects>
+		<inspectorTabs>
+		  <li>ITab_Genes</li>
+		</inspectorTabs>
+		<graphicData>
+		  <texPath>Things/Item/Special/Genepack</texPath>
+		  <graphicClass>Graphic_Genepack</graphicClass>
+		  <drawSize>(0.75, 0.75)</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>100</MarketValue>
+		  <DeteriorationRate>5</DeteriorationRate>
+		</statBases>
+		<descriptionHyperlinks>
+		  <ThingDef>Xenogerm</ThingDef>
+		  <ThingDef>GeneAssembler</ThingDef>
+		</descriptionHyperlinks>
+	</ThingDef>
 </Defs>
