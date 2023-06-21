@@ -3,29 +3,19 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using Verse;
+using Verse.AI;
 
 namespace CategoricGenepacks
 {
-    public class GF_HemoGenepack : Genepack
+    public class GF_HemoGenepack : GF_Pack
     {
-        public override void PostMake()
+        protected override void SetCategory()
         {
-            base.PostMake();
-            geneSet = new GeneSet();
-
-            var allGeneDefs = DefDatabase<GeneDef>.AllDefsListForReading;
-            foreach (var def in allGeneDefs.InRandomOrder())
-            {
-                //Log.Message(def.displayCategory.ToString());
-                if (def.displayCategory.ToString().Contains("Hemogen") && def.biostatArc < 1)
-                {
-                    //Log.Message("    --Successfully found a Hemogen gene! It's " + def.ToString());
-                    geneSet.AddGene(def);
-                    break;
-                }
-                //Log.Message("Gene: " + def.ToString() + ", GeneClass: " + def.geneClass.ToString());
-            }
-            geneSet.GenerateName();
+            GeneCat = "Hemogen";
         }
+    }
+    public class GF_PutHemoInGeneBank : WorkGiver_PutPackInGenebank
+    {
+        public override ThingRequest PotentialWorkThingRequest => ThingRequest.ForDef(GF_Utility.getGFPack("GF_HemoGenepack"));
     }
 }

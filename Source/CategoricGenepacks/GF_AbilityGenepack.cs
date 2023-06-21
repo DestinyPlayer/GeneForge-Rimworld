@@ -6,26 +6,12 @@ using Verse;
 
 namespace CategoricGenepacks
 {
-    public class GF_AbilityGenepack : Genepack
+    public class GF_AbilityGenepack : GF_Pack
     {
-        public override void PostMake()
-        {
-            base.PostMake();
-            geneSet = new GeneSet();
-
-            var allGeneDefs = DefDatabase<GeneDef>.AllDefsListForReading;
-            foreach (var def in allGeneDefs.InRandomOrder())
-            {
-                //Log.Message(def.displayCategory.ToString());
-                if (def.displayCategory.ToString().Contains("Ability") && def.biostatArc < 1)
-                {
-                    //Log.Message("    --Successfully found a Hemogen gene! It's " + def.ToString());
-                    geneSet.AddGene(def);
-                    break;
-                }
-                //Log.Message("Gene: " + def.ToString() + ", GeneClass: " + def.geneClass.ToString());
-            }
-            geneSet.GenerateName();
-        }
+        public new string GeneCat = "Ability";
+    }
+    public class GF_PutAbilityInGeneBank : WorkGiver_PutPackInGenebank
+    {
+        public override ThingRequest PotentialWorkThingRequest => ThingRequest.ForDef(GF_Utility.getGFPack("GF_AbilityGenepack"));
     }
 }

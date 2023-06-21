@@ -125,7 +125,7 @@
 				<refillOptions>
 					<!-- If true, will always be refilled by pawns. -->
 					<!-- If false, allow user to enable/disable tank refill -->
-					<alwaysRefill>true</alwaysRefill>
+					<alwaysRefill>false</alwaysRefill>
 					<!-- Number of ticks needed to refill -->
 					<refillTime>150</refillTime>
 					<!-- Thing to refill with -->
