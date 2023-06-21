@@ -49,6 +49,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GF_Utility.cs" />
     <Compile Include="GF_AG_MechanitorGenepack.cs" />
     <Compile Include="GF_AbilityGenepack.cs" />
     <Compile Include="GF_HemoGenepack.cs" />

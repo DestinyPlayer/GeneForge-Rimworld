@@ -3,6 +3,8 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using Verse;
+using Verse.AI;
+using static CategoricGenepacks.GF_Utility;
 
 namespace CategoricGenepacks
 {
@@ -24,5 +26,9 @@ namespace CategoricGenepacks
             }
             geneSet.GenerateName();
         }
+    }
+    public class GF_PutArchiteInGeneBank : WorkGiver_PutPackInGenebank
+    {
+        public override ThingRequest PotentialWorkThingRequest => ThingRequest.ForDef(GF_Utility.getGFPack("GF_ArchiteGenepack"));
     }
 }

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Inject Genes</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="GF_ArchiteGenepack" or defName="GF_HemoGenepack" or defName="GF_AbilityGenepack" or defName="GF_AG_MechanitorGenepack"]/comps</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="GF_ArchiteGenepack" or defName="GF_HemoGenepack" or defName="GF_AbilityGenepack" or defName="GF_AG_MechanitorGenepack"]</xpath>
+						<value>
+							<comps/>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="GF_ArchiteGenepack" or defName="GF_HemoGenepack" or defName="GF_AbilityGenepack" or defName="GF_AG_MechanitorGenepack"]/comps</xpath>
+					<value>
+						<li Class="CompProperties_Usable">
+							<useJob>UseItem</useJob>
+							<useLabel>Use to gain gene(s)</useLabel>
+						</li>
+						<li Class="GeneInjector.CompProperties_TargetEffect_GeneInjectionT">          
+                                    </li>
+						<li Class="CompProperties_UseEffectDestroySelf"/>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

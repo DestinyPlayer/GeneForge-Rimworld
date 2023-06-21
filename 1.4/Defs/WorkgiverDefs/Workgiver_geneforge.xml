@@ -18,4 +18,56 @@
 		<verb>gene forge</verb>
 		<gerund>gene forging</gerund>
 	  </WorkGiverDef>
+	  
+	  <WorkGiverDef>
+		<defName>GenepackArchiteGF_PlaceInGeneBank</defName>
+		<label>bank genepack</label>
+		<giverClass>CategoricGenepacks.GF_PutArchiteInGeneBank</giverClass>
+		<workType>Hauling</workType>
+		<verb>bank</verb>
+		<gerund>banking</gerund>
+		<priorityInType>111</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	  </WorkGiverDef>
+	  
+	  <WorkGiverDef>
+		<defName>GenepackAbilityGF_PlaceInGeneBank</defName>
+		<label>bank genepack</label>
+		<giverClass>CategoricGenepacks.GF_PutAbilityInGeneBank</giverClass>
+		<workType>Hauling</workType>
+		<verb>bank</verb>
+		<gerund>banking</gerund>
+		<priorityInType>111</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	  </WorkGiverDef>
+	  
+	  <WorkGiverDef>
+		<defName>GenepackHemoGF_PlaceInGeneBank</defName>
+		<label>bank genepack</label>
+		<giverClass>CategoricGenepacks.GF_PutHemoInGeneBank</giverClass>
+		<workType>Hauling</workType>
+		<verb>bank</verb>
+		<gerund>banking</gerund>
+		<priorityInType>111</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	  </WorkGiverDef>
+	  
+	  <WorkGiverDef MayRequire="sarg.alphagenes">
+		<defName>GenepackMechanitorGF_PlaceInGeneBank</defName>
+		<label>bank genepack</label>
+		<giverClass>CategoricGenepacks.GF_AG_PutMechanitorInGeneBank</giverClass>
+		<workType>Hauling</workType>
+		<verb>bank</verb>
+		<gerund>banking</gerund>
+		<priorityInType>111</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	  </WorkGiverDef>
 </Defs>
