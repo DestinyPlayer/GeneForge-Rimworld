@@ -6,7 +6,7 @@ using Verse;
 
 namespace CategoricGenepacks
 {
-    public class GF_ArchiteGenepack : Genepack
+    public class GF_AbilityGenepack : Genepack
     {
         public override void PostMake()
         {
@@ -16,11 +16,14 @@ namespace CategoricGenepacks
             var allGeneDefs = DefDatabase<GeneDef>.AllDefsListForReading;
             foreach (var def in allGeneDefs.InRandomOrder())
             {
-                if (def.biostatArc > 0)
+                //Log.Message(def.displayCategory.ToString());
+                if (def.displayCategory.ToString().Contains("Ability") && def.biostatArc < 1)
                 {
+                    //Log.Message("    --Successfully found a Hemogen gene! It's " + def.ToString());
                     geneSet.AddGene(def);
                     break;
                 }
+                //Log.Message("Gene: " + def.ToString() + ", GeneClass: " + def.geneClass.ToString());
             }
             geneSet.GenerateName();
         }
