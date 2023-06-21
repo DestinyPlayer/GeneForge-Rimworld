@@ -237,7 +237,7 @@
 			</li>
 		</ingredients>
 		<products>
-			<GF_AbilityGenepack>1</GF_AbilityGenepack>
+			<GF_AG_MechanitorGenepack>1</GF_AG_MechanitorGenepack>
 		</products>
 	</RecipeDef>
 </Defs>
