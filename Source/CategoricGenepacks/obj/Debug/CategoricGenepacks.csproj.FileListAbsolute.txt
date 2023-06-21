@@ -1,0 +1,4 @@
+E:\Steam\steamapps\common\RimWorld\Mods\gene-forge\Assemblies\CategoricGenepacks.dll
+E:\Steam\steamapps\common\RimWorld\Mods\gene-forge\Source\CategoricGenepacks\obj\Debug\CategoricGenepacks.csproj.AssemblyReference.cache
+E:\Steam\steamapps\common\RimWorld\Mods\gene-forge\Source\CategoricGenepacks\obj\Debug\CategoricGenepacks.csproj.CoreCompileInputs.cache
+E:\Steam\steamapps\common\RimWorld\Mods\gene-forge\Source\CategoricGenepacks\obj\Debug\CategoricGenepacks.dll

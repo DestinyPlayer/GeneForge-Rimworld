@@ -88,8 +88,156 @@
 			<AG_Alphapack>1</AG_Alphapack>
 		</products>
 	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>ForgeArchiteGenePack</defName>
+		<label>forge archite genepack</label>
+		<recipeUsers>
+            <li>GeneSlurryForge</li>
+        </recipeUsers>
+		<description>Forges an archite gene pack out of naught but Gene Slurry and a random can!</description>
+		<jobString>Gene forging.</jobString>
+		<workAmount>200</workAmount>
+		<workSkill>Intellectual</workSkill>
+		<skillRequirements>
+			<Intellectual>6</Intellectual>
+		</skillRequirements>
+		<effectWorking>Surgery</effectWorking>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ArchiteCapsule</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<GF_ArchiteGenepack>1</GF_ArchiteGenepack>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>ForgeHemoGenePack</defName>
+		<label>forge hemo genepack</label>
+		<recipeUsers>
+            <li>GeneSlurryForge</li>
+        </recipeUsers>
+		<description>Forges a hemogen gene pack out of naught but Gene Slurry and a random can!</description>
+		<jobString>Gene forging.</jobString>
+		<workAmount>200</workAmount>
+		<workSkill>Intellectual</workSkill>
+		<skillRequirements>
+			<Intellectual>6</Intellectual>
+		</skillRequirements>
+		<effectWorking>Surgery</effectWorking>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>HemogenPack</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<GF_HemoGenepack>1</GF_HemoGenepack>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>ForgeAbilityGenePack</defName>
+		<label>forge ability genepack</label>
+		<recipeUsers>
+            <li>GeneSlurryForge</li>
+        </recipeUsers>
+		<description>Forges a ability gene pack out of naught but Gene Slurry and a random can!</description>
+		<jobString>Gene forging.</jobString>
+		<workAmount>200</workAmount>
+		<workSkill>Intellectual</workSkill>
+		<skillRequirements>
+			<Intellectual>6</Intellectual>
+		</skillRequirements>
+		<effectWorking>Surgery</effectWorking>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Silver</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<products>
+			<GF_AbilityGenepack>1</GF_AbilityGenepack>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef MayRequire="sarg.alphagenes">
+		<defName>ForgeMechanitorGenePack</defName>
+		<label>forge mechanitor genepack</label>
+		<recipeUsers>
+            <li>GeneSlurryForge</li>
+        </recipeUsers>
+		<description>Forges a mechanitor gene pack out of naught but Gene Slurry and a random can!</description>
+		<jobString>Gene forging.</jobString>
+		<workAmount>200</workAmount>
+		<workSkill>Intellectual</workSkill>
+		<skillRequirements>
+			<Intellectual>6</Intellectual>
+		</skillRequirements>
+		<effectWorking>Surgery</effectWorking>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SubcoreRegular</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<GF_AbilityGenepack>1</GF_AbilityGenepack>
+		</products>
+	</RecipeDef>
 </Defs>
-
-
-
-
