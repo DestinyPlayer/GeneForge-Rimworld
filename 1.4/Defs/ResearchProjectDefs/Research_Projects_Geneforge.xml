@@ -19,7 +19,7 @@
   
   <ResearchProjectDef>
     <defName>PrecisionGeneForging</defName>
-    <label>prevision gene forging</label>
+    <label>precision gene forging</label>
     <description>Forge more specific genepacks based on their category. Also unlocks a bigger tank!</description>
     <techLevel>Spacer</techLevel>
     <baseCost>1000</baseCost>

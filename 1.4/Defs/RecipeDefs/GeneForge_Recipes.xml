@@ -13,6 +13,9 @@
 		<skillRequirements>
 			<Intellectual>6</Intellectual>
 		</skillRequirements>
+		<researchPrerequisites>
+		  <li>GeneForging</li>
+		</researchPrerequisites>
 		<effectWorking>Surgery</effectWorking>
 		<soundWorking>Recipe_Brewing</soundWorking>
 		<ingredients>
@@ -42,6 +45,9 @@
 		<skillRequirements>
 			<Intellectual>6</Intellectual>
 		</skillRequirements>
+		<researchPrerequisites>
+		  <li>GeneForging</li>
+		</researchPrerequisites>
 		<effectWorking>Surgery</effectWorking>
 		<soundWorking>Recipe_Brewing</soundWorking>
 		<ingredients>
@@ -72,6 +78,9 @@
 		<skillRequirements>
 			<Intellectual>6</Intellectual>
 		</skillRequirements>
+		<researchPrerequisites>
+		  <li>GeneForging</li>
+		</researchPrerequisites>
 		<effectWorking>Surgery</effectWorking>
 		<soundWorking>Recipe_Brewing</soundWorking>
 		<ingredients>
