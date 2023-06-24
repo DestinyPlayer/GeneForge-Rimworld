@@ -209,7 +209,6 @@
 		<compClass>CompPowerTrader</compClass>
 		<basePowerConsumption>750</basePowerConsumption>
 	  </li>
-	  <li Class="CompProperties_Flickable"/>
 	  <li Class="CompProperties_Breakdownable"/>
 	  <li Class="CompProperties_Facility">
 		<maxSimultaneous>1</maxSimultaneous>
