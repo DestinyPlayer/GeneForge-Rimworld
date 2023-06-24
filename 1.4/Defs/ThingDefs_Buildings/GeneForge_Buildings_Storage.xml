@@ -101,7 +101,7 @@
 		<castEdgeShadows>true</castEdgeShadows>
 		<fillPercent>1</fillPercent>
 		<researchPrerequisites>
-		  <li>GeneForging</li>
+		  <li>PrecisionGeneForging</li>
 		</researchPrerequisites>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>

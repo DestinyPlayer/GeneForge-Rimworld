@@ -18,7 +18,7 @@ namespace CategoricGenepacks
             var allGeneDefs = DefDatabase<GeneDef>.AllDefsListForReading;
             foreach (var def in allGeneDefs.InRandomOrder())
             {
-                if (def.biostatArc > 0)
+                if (def.biostatArc > 0 && !def.displayCategory.ToString().ToLower().Contains("BEWH"))
                 {
                     geneSet.AddGene(def);
                     break;
