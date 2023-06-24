@@ -177,8 +177,8 @@
     <graphicData>
       <texPath>Things/Building/GeneAnalyzer</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>1</drawSize>
-      <drawOffset>(0,0,0.1)</drawOffset>
+      <drawSize>1.2</drawSize>
+      <drawOffset>(0,0,-0.06)</drawOffset>
     </graphicData>
 	<rotatable>false</rotatable>
 	<castEdgeShadows>true</castEdgeShadows>
