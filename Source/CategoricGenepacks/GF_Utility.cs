@@ -21,7 +21,7 @@ namespace CategoricGenepacks
         static GF_Utility()
         {
             GF_UtilityStartup();
-            Log.Message("This worked!");
+            //Log.Message("This worked!");
         }
 
         public static ThingDef getGFPack(string name)
@@ -36,13 +36,14 @@ namespace CategoricGenepacks
             foreach (var cat in allGeneCatDefs)
             {
                 allGeneCats.Add(cat.defName);
-                Log.Message("Category - " + cat);
+                //Log.Message("Category - " + cat);
             }
         }
     }
     public class GF_Pack : Genepack
     {
         public string GeneCat = "";
+        public int AllowArchite = 0;
         public override void PostMake()
         {
             SetCategory();
@@ -52,7 +53,7 @@ namespace CategoricGenepacks
             foreach (var def in GF_Utility.allGeneDefs.InRandomOrder())
             {
                 //Log.Message(def.displayCategory.ToString());
-                if (def.displayCategory.ToString().ToLower().Contains(GeneCat.ToLower()) && def.biostatArc < 1)
+                if (def.displayCategory.ToString().Contains(GeneCat) && def.biostatArc < 1+AllowArchite)
                 {
                     //Log.Message("    --Successfully found a Hemogen gene! It's " + def.ToString());
                     geneSet.AddGene(def);

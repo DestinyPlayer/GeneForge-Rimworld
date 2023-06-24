@@ -3,7 +3,7 @@
   <ThingDef ParentName="FurnitureBase">
     <defName>GF_GeneSlurryExtractorCorpse</defName>
     <label>gene slurry extractor</label>
-    <description>This apparatus extracts Genetic Slurry from humanoid corpses and humanoid meat.</description>
+    <description>This apparatus extracts Genetic Slurry from humanoid corpses, genepacks and humanoid meat.</description>
     <thingClass>Building_Storage</thingClass>
     <graphicData>
       <texPath>Things/Building/GeneSlurryExtractor</texPath>
@@ -92,7 +92,7 @@
   <ThingDef ParentName="FurnitureBase">
     <defName>GF_GeneSlurryExtractorMeat</defName>
     <label>gene slurry extractor</label>
-    <description>This apparatus extracts Genetic Slurry from humanoid corpses and humanoid meat.</description>
+    <description>This apparatus extracts Genetic Slurry from humanoid corpses, genepacks and humanoid meat.</description>
     <thingClass>Building_Storage</thingClass>
     <graphicData>
       <texPath>Things/Building/GeneSlurryExtractor</texPath>
@@ -157,7 +157,7 @@
 	  <li Class="CompProperties_Flickable"/>
 	  <li Class="CompPropertiesSwapBuilding_GF">
 	    <buttonName>Mode: Meat</buttonName>
-		<buttonDescription>The Extractor is currently set to consume humanoid meat. Click to switch to consuming humanoid corpses.</buttonDescription>
+		<buttonDescription>The Extractor is currently set to consume humanoid meat. Click to switch to consuming corpses.</buttonDescription>
 		<buildingSwap>GF_GeneSlurryExtractorCorpse</buildingSwap>
 		<uiIconPath>Things/UI/GeneExtractorMeat</uiIconPath>
 	  </li>

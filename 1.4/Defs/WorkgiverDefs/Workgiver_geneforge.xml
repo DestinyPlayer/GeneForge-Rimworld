@@ -70,4 +70,17 @@
 			<li>Manipulation</li>
 		</requiredCapacities>
 	  </WorkGiverDef>
+	  
+	  <WorkGiverDef MayRequire="phonicmas.biotechexpansionwarhammer40k">
+		<defName>GenepackWarhammerGF_PlaceInGeneBank</defName>
+		<label>bank genepack</label>
+		<giverClass>CategoricGenepacks.GF_BEWH_PutWarhammerInGeneBank</giverClass>
+		<workType>Hauling</workType>
+		<verb>bank</verb>
+		<gerund>banking</gerund>
+		<priorityInType>111</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	  </WorkGiverDef>
 </Defs>

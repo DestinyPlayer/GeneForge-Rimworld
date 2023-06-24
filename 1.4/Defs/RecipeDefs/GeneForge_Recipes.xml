@@ -30,12 +30,12 @@
 		</products>
 	</RecipeDef>
 	<RecipeDef MayRequire="wvc.sergkart.races.biotech">
-		<defName>ForgeWYCGenePack</defName>
-		<label>forge WYC genepack</label>
+		<defName>ForgeWVCGenePack</defName>
+		<label>forge wvc genepack</label>
 		<recipeUsers>
             <li>GeneSlurryForge</li>
         </recipeUsers>
-		<description>Forges a WYC gene pack out of naught but Gene Slurry and a random can!</description>
+		<description>Forges a WVC gene pack out of naught but Gene Slurry and a random can!</description>
 		<jobString>Gene forging.</jobString>
 		<workAmount>100</workAmount>
 		<workSkill>Intellectual</workSkill>
@@ -103,6 +103,9 @@
 			<Intellectual>6</Intellectual>
 		</skillRequirements>
 		<effectWorking>Surgery</effectWorking>
+		<researchPrerequisites>
+		  <li>PrecisionGeneForging</li>
+		</researchPrerequisites>
 		<soundWorking>Recipe_Brewing</soundWorking>
 		<ingredients>
 			<li>
@@ -141,6 +144,9 @@
 			<Intellectual>6</Intellectual>
 		</skillRequirements>
 		<effectWorking>Surgery</effectWorking>
+		<researchPrerequisites>
+		  <li>PrecisionGeneForging</li>
+		</researchPrerequisites>
 		<soundWorking>Recipe_Brewing</soundWorking>
 		<ingredients>
 			<li>
@@ -171,7 +177,7 @@
 		<recipeUsers>
             <li>GeneSlurryForge</li>
         </recipeUsers>
-		<description>Forges a ability gene pack out of naught but Gene Slurry and a random can!</description>
+		<description>Forges an ability gene pack out of naught but Gene Slurry and a random can!</description>
 		<jobString>Gene forging.</jobString>
 		<workAmount>200</workAmount>
 		<workSkill>Intellectual</workSkill>
@@ -179,6 +185,9 @@
 			<Intellectual>6</Intellectual>
 		</skillRequirements>
 		<effectWorking>Surgery</effectWorking>
+		<researchPrerequisites>
+		  <li>PrecisionGeneForging</li>
+		</researchPrerequisites>
 		<soundWorking>Recipe_Brewing</soundWorking>
 		<ingredients>
 			<li>
@@ -209,7 +218,7 @@
 		<recipeUsers>
             <li>GeneSlurryForge</li>
         </recipeUsers>
-		<description>Forges a mechanitor gene pack out of naught but Gene Slurry and a random can!</description>
+		<description>Forges a mechanitor gene pack out of naught but Gene Slurry and a random can!\n\nSargalicious.</description>
 		<jobString>Gene forging.</jobString>
 		<workAmount>200</workAmount>
 		<workSkill>Intellectual</workSkill>
@@ -217,6 +226,9 @@
 			<Intellectual>6</Intellectual>
 		</skillRequirements>
 		<effectWorking>Surgery</effectWorking>
+		<researchPrerequisites>
+		  <li>PrecisionGeneForging</li>
+		</researchPrerequisites>
 		<soundWorking>Recipe_Brewing</soundWorking>
 		<ingredients>
 			<li>
@@ -238,6 +250,47 @@
 		</ingredients>
 		<products>
 			<GF_AG_MechanitorGenepack>1</GF_AG_MechanitorGenepack>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef MayRequire="phonicmas.biotechexpansionwarhammer40k">
+		<defName>ForgeWarhammerGenePack</defName>
+		<label>forge gene seed genepack</label>
+		<recipeUsers>
+            <li>GeneSlurryForge</li>
+        </recipeUsers>
+		<description>Forges a gene seed gene pack out of naught but Gene Slurry and a random can!\n\nNot approved by the Adeptus Mechanicus.</description>
+		<jobString>Gene forging.</jobString>
+		<workAmount>200</workAmount>
+		<workSkill>Intellectual</workSkill>
+		<skillRequirements>
+			<Intellectual>6</Intellectual>
+		</skillRequirements>
+		<effectWorking>Surgery</effectWorking>
+		<researchPrerequisites>
+		  <li>PrecisionGeneForging</li>
+		</researchPrerequisites>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gold</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<products>
+			<GF_BEWH_WarhammerGenepack>1</GF_BEWH_WarhammerGenepack>
 		</products>
 	</RecipeDef>
 </Defs>
