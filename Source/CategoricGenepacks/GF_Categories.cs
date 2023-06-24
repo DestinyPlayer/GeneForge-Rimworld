@@ -10,7 +10,10 @@ namespace CategoricGenepacks
 //Ability
     public class GF_AbilityGenepack : GF_Pack
     {
-        public new string GeneCat = "Ability";
+        protected override void SetCategory()
+        {
+            GeneCat = "Ability";
+        }
     }
     public class GF_PutAbilityInGeneBank : WorkGiver_PutPackInGenebank
     {
@@ -43,8 +46,12 @@ namespace CategoricGenepacks
 //Warhammer 40k Genes and Psycasts
     public class GF_BEWH_WarhammerGenepack : GF_Pack
     {
-        public new string GeneCat = "BEWH";
-        public new int AllowArchite = 100;
+        
+        protected override void SetCategory()
+        {
+            GeneCat = "BEWH";
+            AllowArchite = 100;
+        }
     }
     public class GF_BEWH_PutWarhammerInGeneBank : WorkGiver_PutPackInGenebank
     {
