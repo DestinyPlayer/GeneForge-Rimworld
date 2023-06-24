@@ -164,6 +164,62 @@
     </comps>
   </ThingDef>
   
+  <ThingDef ParentName="BuildingBase">
+	<defName>GF_GeneAnalyzer</defName>
+	<label>Gene Analyzer</label>
+	<description>This advanced piece of machinery analyzes the gene slurry and separates every single strand and thread of DNA within it, allowing you to have much more control over the genepacks you produce in the Gene Forge.\n\nDisclaimer: Do not stick your thumbs in the fans. It won't let you analyze your own genome.</description>
+	<canOverlapZones>false</canOverlapZones>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.5</fillPercent>
+	<researchPrerequisites>
+		<li>PrecisionGeneForging</li>
+	</researchPrerequisites>
+    <graphicData>
+      <texPath>Things/Building/GeneAnalyzer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.2</drawSize>
+      <drawOffset>(0,0,-0.06)</drawOffset>
+    </graphicData>
+	<rotatable>false</rotatable>
+	<castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.20</staticSunShadowHeight>
+    <altitudeLayer>Building</altitudeLayer>
+	<useHitPoints>True</useHitPoints>
+    <designationCategory>Biotech</designationCategory>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>20000</WorkToBuild>
+      <Mass>60</Mass>
+      <Flammability>1</Flammability>
+    </statBases>
+    <size>(1,1)</size>
+	<building>
+      <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+    </building>
+    <costList>
+      <Steel>200</Steel>
+	  <Silver>100</Silver>
+	  <Plasteel>50</Plasteel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+	  <ComponentSpacer>1</ComponentSpacer>
+	  <ArchiteCapsule>2</ArchiteCapsule>
+    </costList>
+	<comps>
+	  <li Class="CompProperties_Power">
+		<compClass>CompPowerTrader</compClass>
+		<basePowerConsumption>750</basePowerConsumption>
+	  </li>
+	  <li Class="CompProperties_Breakdownable"/>
+	  <li Class="CompProperties_Facility">
+		<maxSimultaneous>1</maxSimultaneous>
+	  </li>
+	</comps>
+	<placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+	<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+  </ThingDef>
+  
   <ThingDef ParentName="BenchBase">
 	<defName>GeneSlurryForge</defName>
 	<label>Gene Forge</label>
@@ -237,6 +293,25 @@
         </fuelFilter>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
       </li>
+	  <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>GF_GeneAnalyzer</li>
+        </linkableFacilities>
+      </li>
+	  <li Class="CF.CompProperties_UnlocksRecipe">
+	   <linkableFacilities>
+		  <li>
+			 <targetFacility>GF_GeneAnalyzer</targetFacility>
+		  </li>
+	   </linkableFacilities>
+	   <recipes>
+		  <li>ForgeArchiteGenePack</li>
+		  <li>ForgeHemoGenePack</li>
+		  <li>ForgeAbilityGenePack</li>
+		  <li>ForgeMechanitorGenePack</li>
+		  <li>ForgeWarhammerGenePack</li>
+	   </recipes>
+	  </li>
 	</comps>
   </ThingDef>
 </Defs>
