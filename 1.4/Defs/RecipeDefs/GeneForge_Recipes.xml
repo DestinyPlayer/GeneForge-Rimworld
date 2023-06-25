@@ -101,6 +101,9 @@
 	<RecipeDef>
 		<defName>ForgeArchiteGenePack</defName>
 		<label>forge archite genepack</label>
+		<recipeUsers>
+            <li>GeneSlurryForge</li>
+        </recipeUsers>
 		<description>Forges an archite gene pack out of naught but Gene Slurry and a random can!</description>
 		<jobString>Gene forging.</jobString>
 		<workAmount>200</workAmount>
@@ -139,6 +142,9 @@
 	<RecipeDef>
 		<defName>ForgeHemoGenePack</defName>
 		<label>forge hemo genepack</label>
+		<recipeUsers>
+            <li>GeneSlurryForge</li>
+        </recipeUsers>
 		<description>Forges a hemogen gene pack out of naught but Gene Slurry and a random can!</description>
 		<jobString>Gene forging.</jobString>
 		<workAmount>200</workAmount>
@@ -177,6 +183,9 @@
 	<RecipeDef>
 		<defName>ForgeAbilityGenePack</defName>
 		<label>forge ability genepack</label>
+		<recipeUsers>
+            <li>GeneSlurryForge</li>
+        </recipeUsers>
 		<description>Forges an ability gene pack out of naught but Gene Slurry and a random can!</description>
 		<jobString>Gene forging.</jobString>
 		<workAmount>200</workAmount>
@@ -215,6 +224,9 @@
 	<RecipeDef MayRequire="sarg.alphagenes">
 		<defName>ForgeMechanitorGenePack</defName>
 		<label>forge mechanitor genepack</label>
+		<recipeUsers>
+            <li>GeneSlurryForge</li>
+        </recipeUsers>
 		<description>Forges a mechanitor gene pack out of naught but Gene Slurry and a random can!\n\nSargalicious.</description>
 		<jobString>Gene forging.</jobString>
 		<workAmount>200</workAmount>
@@ -253,6 +265,9 @@
 	<RecipeDef MayRequire="phonicmas.biotechexpansionwarhammer40k">
 		<defName>ForgeWarhammerGenePack</defName>
 		<label>forge gene seed genepack</label>
+		<recipeUsers>
+            <li>GeneSlurryForge</li>
+        </recipeUsers>
 		<description>Forges a gene seed gene pack out of naught but Gene Slurry and a random can!\n\nNot approved by the Adeptus Mechanicus.</description>
 		<jobString>Gene forging.</jobString>
 		<workAmount>200</workAmount>

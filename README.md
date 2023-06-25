@@ -8,6 +8,7 @@ So I made this.
 
 ## CHANGELOG
 
+- Version 1.3.1: Removed that facility. I really cannot get it to work how I want it to to save my life.
 - Version 1.3: Added a facility that's necessary for producing category-filtered genepacks.
 - Version 1.2: Some research changes, plus compatibility for Warhammer 40k Genes and Psycasts.
 - Version 1.1.2: Fixed the bug where pawns couldn't stuff category Genepacks into Gene Banks.
