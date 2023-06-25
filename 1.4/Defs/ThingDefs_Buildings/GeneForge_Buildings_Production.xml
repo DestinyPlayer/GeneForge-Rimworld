@@ -164,7 +164,7 @@
     </comps>
   </ThingDef>
   
-  <ThingDef ParentName="BuildingBase">
+  <!--<ThingDef ParentName="BuildingBase">
 	<defName>GF_GeneAnalyzer</defName>
 	<label>Gene Analyzer</label>
 	<description>This advanced piece of machinery analyzes the gene slurry and separates every single strand and thread of DNA within it, allowing you to have much more control over the genepacks you produce in the Gene Forge.\n\nDisclaimer: Do not stick your thumbs in the fans. It won't let you analyze your own genome.</description>
@@ -218,7 +218,7 @@
       <li>PlaceWorker_ShowFacilitiesConnections</li>
     </placeWorkers>
 	<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
-  </ThingDef>
+  </ThingDef>-->
   
   <ThingDef ParentName="BenchBase">
 	<defName>GeneSlurryForge</defName>
@@ -293,7 +293,7 @@
         </fuelFilter>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
       </li>
-	  <li Class="CompProperties_AffectedByFacilities">
+	  <!--<li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
           <li>GF_GeneAnalyzer</li>
         </linkableFacilities>
@@ -311,7 +311,7 @@
 		  <li>ForgeMechanitorGenePack</li>
 		  <li>ForgeWarhammerGenePack</li>
 	   </recipes>
-	  </li>
+	  </li>-->
 	</comps>
   </ThingDef>
 </Defs>
