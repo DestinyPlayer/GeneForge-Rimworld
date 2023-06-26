@@ -30,7 +30,7 @@
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
     <prerequisites>
-      <li>GeneProcessor</li>
+      <li>GeneForging</li>
     </prerequisites>
   </ResearchProjectDef>
 </Defs>
