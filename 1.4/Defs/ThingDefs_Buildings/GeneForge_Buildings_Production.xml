@@ -70,9 +70,9 @@
     <surfaceType>Item</surfaceType>
     <canOverlapZones>false</canOverlapZones>
     <comps>
-      <li Class="PipeSystem.CompProperties_ConvertThingToResource">
+      <li Class="CategoricGenepacks.GF_CompProperties_ConvertThingToResource">
         <pipeNet>GF_GeneSlurryNet</pipeNet>
-        <thing>Corpse_Human</thing>
+        <catThing>CorpsesHumanlike</catThing>
 		<ratio>1</ratio>
       </li>
 	  <li Class="CompProperties_Power">
