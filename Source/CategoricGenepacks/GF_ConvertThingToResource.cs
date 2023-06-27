@@ -19,7 +19,7 @@ namespace CategoricGenepacks
 
         public Thing HeldThing
         {
-            
+
             get
             {
                 List<Thing> list = parent.Map.thingGrid.ThingsListAt(parent.Position);
@@ -27,7 +27,7 @@ namespace CategoricGenepacks
 
                 Log.Message("Grabbing category: " + catList.ToString());
 
-                for (int i=0; i < catList.Count; i++)
+                for (int i = 0; i < catList.Count; i++)
                 {
                     Log.Message("  Grabbing corpse: " + catList[i].ToString());
                     for (int j = 0; j < list.Count; j++)
@@ -76,5 +76,8 @@ namespace CategoricGenepacks
                 heldThing.DeSpawn();
             }
         }
+    }
+    public class PipeNet {
+        public List<GF_ConvertThingToResource> convertersC = new List<GF_ConvertThingToResource>();
     }
 }
