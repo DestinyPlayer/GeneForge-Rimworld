@@ -3,7 +3,7 @@
   <ThingDef ParentName="FurnitureBase">
     <defName>GF_GeneSlurryExtractorCorpse</defName>
     <label>gene slurry extractor</label>
-    <description>This apparatus extracts Genetic Slurry from humanoid corpses, genepacks and humanoid meat.</description>
+    <description>This apparatus extracts Genetic Slurry from humanoid corpses and humanoid meat.\n\n(To switch what you use to extract genetic slurry from, press the button in the UI.)</description>
     <thingClass>Building_Storage</thingClass>
     <graphicData>
       <texPath>Things/Building/GeneSlurryExtractor</texPath>
@@ -48,6 +48,7 @@
 		  <disallowedCategories>
             <li>CorpsesMechanoid</li>
             <li>CorpsesAnimal</li>
+			<li MayRequire="erdelf.humanoidalienraces">alienCorpseCategory</li>
           </disallowedCategories>
         </filter>
       </fixedStorageSettings>
@@ -56,8 +57,8 @@
         <filter>
           <disallowNotEverStorable>true</disallowNotEverStorable>
 		  <specialFiltersToAllow>
-			<li>AllowCorpsesColonist</li>
 		    <li>AllowCorpsesStranger</li>
+			<li>AllowCorpsesSlave</li>
 		  </specialFiltersToAllow>
         </filter>
       </defaultStorageSettings>
@@ -81,18 +82,101 @@
 	  </li>
 	  <li Class="CompProperties_Flickable"/>
 	  <li Class="CompPropertiesSwapBuilding_GF">
-	    <buttonName>Mode: Corpses</buttonName>
-		<buttonDescription>The Extractor is currently set to consume humanoid corpses. Click to switch to consuming humanoid meat.</buttonDescription>
-		<buildingSwap>GF_GeneSlurryExtractorMeat</buildingSwap>
+	    <buttonName>Mode: Human Corpses</buttonName>
+		<buttonDescription>[HUMAN CORPSES] [alien corpses] [human meat]\nThe Extractor is currently set to consume human corpses. Click to switch to consuming alien corpses [HAR].</buttonDescription>
+		<buildingSwap>GF_GeneSlurryExtractorAlien</buildingSwap>
 		<uiIconPath>Things/UI/GeneExtractorCorpse</uiIconPath>
 	  </li>
     </comps>
   </ThingDef>
   
   <ThingDef ParentName="FurnitureBase">
+    <defName>GF_GeneSlurryExtractorAlien</defName>
+    <label>gene slurry extractor</label>
+    <description>This apparatus extracts Genetic Slurry from humanoid corpses and humanoid meat.\n\n(To switch what you use to extract genetic slurry from, press the button in the UI.)</description>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Things/Building/GeneSlurryExtractor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <allowFlip>false</allowFlip>
+    </graphicData>
+	<rotatable>false</rotatable>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <!-- <altitudeLayer>Building</altitudeLayer> -->
+    <passability>Standable</passability>
+    <!-- <passability>PassThroughOnly</passability> -->
+    <fillPercent>0.5</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <pathCost>50</pathCost>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>8</Mass>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>0.5</Beauty>
+    </statBases>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <filter>
+          <disallowNotEverStorable>true</disallowNotEverStorable>
+		  <categories>
+		    <li MayRequire="erdelf.humanoidalienraces">CorpsesHumanlike</li>
+		  </categories>
+		  <disallowedThingDefs>
+			<li>Corpse_Human</li>
+		  </disallowedThingDefs>
+		  <specialFiltersToDisallow>
+			<li>AllowRotten</li>
+		  </specialFiltersToDisallow>
+		  <disallowedCategories>
+            <li>CorpsesMechanoid</li>
+            <li>CorpsesAnimal</li>
+          </disallowedCategories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <disallowNotEverStorable>true</disallowNotEverStorable>
+		  <specialFiltersToAllow>
+			<li>AllowCorpsesStranger</li>
+			<li>AllowCorpsesSlave</li>
+		  </specialFiltersToAllow>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+	<inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+    <canOverlapZones>false</canOverlapZones>
+    <comps>
+      <li MayRequire="erdelf.humanoidalienraces" Class="PipeSystem.CompProperties_ConvertThingToResource">
+        <pipeNet>GF_GeneSlurryNet</pipeNet>
+        <category>alienCorpseCategory</category>
+		<ratio>1</ratio>
+      </li>
+	  <li Class="CompProperties_Power">
+		<compClass>CompPowerTrader</compClass>
+		<basePowerConsumption>100</basePowerConsumption>
+	  </li>
+	  <li Class="CompProperties_Flickable"/>
+	  <li Class="CompPropertiesSwapBuilding_GF">
+	    <buttonName>Mode: Alien Corpses [HAR]</buttonName>
+		<buttonDescription>[human corpses] [ALIEN CORPSES] [human meat]\nThe Extractor is currently set to consume alien corpses [HAR]. Click to switch to consuming human meat.</buttonDescription>
+		<buildingSwap>GF_GeneSlurryExtractorMeat</buildingSwap>
+		<uiIconPath>Things/UI/GeneExtractorAlien</uiIconPath>
+	  </li>
+    </comps>
+  </ThingDef>-->
+  
+  <ThingDef ParentName="FurnitureBase">
     <defName>GF_GeneSlurryExtractorMeat</defName>
     <label>gene slurry extractor</label>
-    <description>This apparatus extracts Genetic Slurry from humanoid corpses, genepacks and humanoid meat.</description>
+    <description>This apparatus extracts Genetic Slurry from humanoid corpses and humanoid meat.\n\n(To switch what you use to extract genetic slurry from, press the button in the UI.)</description>
     <thingClass>Building_Storage</thingClass>
     <graphicData>
       <texPath>Things/Building/GeneSlurryExtractor</texPath>
@@ -157,7 +241,7 @@
 	  <li Class="CompProperties_Flickable"/>
 	  <li Class="CompPropertiesSwapBuilding_GF">
 	    <buttonName>Mode: Meat</buttonName>
-		<buttonDescription>The Extractor is currently set to consume humanoid meat. Click to switch to consuming corpses.</buttonDescription>
+		<buttonDescription>[human corpses] [alien corpses] [HUMAN MEAT]\nThe Extractor is currently set to consume human meat. Click to switch to consuming corpses.</buttonDescription>
 		<buildingSwap>GF_GeneSlurryExtractorCorpse</buildingSwap>
 		<uiIconPath>Things/UI/GeneExtractorMeat</uiIconPath>
 	  </li>
