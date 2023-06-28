@@ -140,7 +140,7 @@
 		</descriptionHyperlinks>
 	</ThingDef>
 	
-	<ThingDef ParentName="GeneSetHolderBase" MayRequire="sarg.alphagenes">
+	<ThingDef ParentName="GeneSetHolderBase" MayRequire="phonicmas.biotechexpansionwarhammer40k">
 		<defName>GF_BEWH_WarhammerGenepack</defName>
 		<label>geneforged gene seed genepack</label>
 		<description>A small capsule containing a package of genetic information. To use a genepack, it must be placed in a gene bank near a gene assembler and combined into an implantable xenogerm.\n\nIf not kept in a powered gene bank, this genepack will slowly deteriorate.\n\nThis genepack has been deliberately Geneforged in order to produce a gene seed gene.\n\nNot approved by the Adeptus Mechanicus.</description>

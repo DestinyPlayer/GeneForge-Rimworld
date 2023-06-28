@@ -8,6 +8,7 @@ So I made this.
 
 ## CHANGELOG
 
+- Version 1.4: Added compatibility for Humanoid Alien Races, fixed some bugs, added some extra information to the Gene Forge.
 - Version 1.3.1: Removed that facility. I really cannot get it to work how I want it to to save my life.
 - Version 1.3: Added a facility that's necessary for producing category-filtered genepacks.
 - Version 1.2: Some research changes, plus compatibility for Warhammer 40k Genes and Psycasts.

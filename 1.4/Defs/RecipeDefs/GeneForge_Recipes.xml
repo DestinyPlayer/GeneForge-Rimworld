@@ -2,7 +2,7 @@
 <Defs>
 	<RecipeDef>
 		<defName>ForgeGenePack</defName>
-		<label>forge genepack</label>
+		<label>forge genepack (1gs)</label>
 		<recipeUsers>
             <li>GeneSlurryForge</li>
         </recipeUsers>
@@ -34,7 +34,7 @@
 	</RecipeDef>
 	<RecipeDef MayRequire="wvc.sergkart.races.biotech">
 		<defName>ForgeWVCGenePack</defName>
-		<label>forge wvc genepack</label>
+		<label>forge wvc genepack (1gs)</label>
 		<recipeUsers>
             <li>GeneSlurryForge</li>
         </recipeUsers>
@@ -67,7 +67,7 @@
 	
 	<RecipeDef MayRequire="sarg.alphagenes">
 		<defName>ForgeAlphaGenePack</defName>
-		<label>forge alphapack</label>
+		<label>forge alphapack (1gs)</label>
 		<recipeUsers>
             <li>GeneSlurryForge</li>
         </recipeUsers>
@@ -100,7 +100,7 @@
 	
 	<RecipeDef>
 		<defName>ForgeArchiteGenePack</defName>
-		<label>forge archite genepack</label>
+		<label>forge archite genepack (2gs)</label>
 		<recipeUsers>
             <li>GeneSlurryForge</li>
         </recipeUsers>
@@ -141,7 +141,7 @@
 	
 	<RecipeDef>
 		<defName>ForgeHemoGenePack</defName>
-		<label>forge hemo genepack</label>
+		<label>forge hemo genepack (2gs)</label>
 		<recipeUsers>
             <li>GeneSlurryForge</li>
         </recipeUsers>
@@ -182,7 +182,7 @@
 	
 	<RecipeDef>
 		<defName>ForgeAbilityGenePack</defName>
-		<label>forge ability genepack</label>
+		<label>forge ability genepack (2gs)</label>
 		<recipeUsers>
             <li>GeneSlurryForge</li>
         </recipeUsers>
@@ -223,7 +223,7 @@
 	
 	<RecipeDef MayRequire="sarg.alphagenes">
 		<defName>ForgeMechanitorGenePack</defName>
-		<label>forge mechanitor genepack</label>
+		<label>forge mechanitor genepack (2gs)</label>
 		<recipeUsers>
             <li>GeneSlurryForge</li>
         </recipeUsers>
@@ -264,7 +264,7 @@
 	
 	<RecipeDef MayRequire="phonicmas.biotechexpansionwarhammer40k">
 		<defName>ForgeWarhammerGenePack</defName>
-		<label>forge gene seed genepack</label>
+		<label>forge gene seed genepack (2gs)</label>
 		<recipeUsers>
             <li>GeneSlurryForge</li>
         </recipeUsers>
