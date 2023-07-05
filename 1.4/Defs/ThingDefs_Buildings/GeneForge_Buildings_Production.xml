@@ -58,7 +58,7 @@
           <disallowNotEverStorable>true</disallowNotEverStorable>
 		  <specialFiltersToAllow>
 		    <li>AllowCorpsesStranger</li>
-			<li>AllowCorpsesSlave</li>
+			<li MayRequire="ludeon.rimworld.ideology">AllowCorpsesSlave</li>
 		  </specialFiltersToAllow>
         </filter>
       </defaultStorageSettings>
@@ -142,7 +142,7 @@
           <disallowNotEverStorable>true</disallowNotEverStorable>
 		  <specialFiltersToAllow>
 			<li>AllowCorpsesStranger</li>
-			<li>AllowCorpsesSlave</li>
+			<li MayRequire="ludeon.rimworld.ideology">AllowCorpsesSlave</li>
 		  </specialFiltersToAllow>
         </filter>
       </defaultStorageSettings>
