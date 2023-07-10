@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <SoundDef>
+    <defName>GF_HemoConverter</defName>
+    <sustain>True</sustain>
+    <context>MapOnly</context>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>GF_HemoConverter/GF_HemoConverter</clipPath>
+          </li>
+        </grains>
+        <volumeRange>45</volumeRange>
+        <distRange>10~40</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+</Defs>

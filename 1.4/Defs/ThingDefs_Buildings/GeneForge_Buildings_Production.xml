@@ -398,4 +398,62 @@
 	  </li>-->
 	</comps>
   </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase" MayRequire="vanillaracesexpanded.sanguophage">
+	<defName>GeneSlurryHemoConverter</defName>
+	<label>geneslurry hemo converter</label>
+	<description>This contraption takes the distilled Hemogen that broils inside the veins of Sanguophages, and distills it even further until it is so blended up that the only thing left is pure, genetic data in what is, unfortunately, not a particularly efficient process.\n\nRequires 100 units of Hemogen to produce a single unit of Gene Slurry.\n\nDon't drink it, it tastes like Oscar.</description>
+    <canOverlapZones>false</canOverlapZones>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.3</fillPercent>
+	<researchPrerequisites>
+		<li>GeneForging</li>
+	</researchPrerequisites>
+	<designationCategory>Biotech</designationCategory>
+	<tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Building/GeneHemoConverter</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,2.3)</drawSize>
+	  <drawOffset>(0,0,0)</drawOffset>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<costList>
+      <Steel>300</Steel>
+	  <Silver>200</Silver>
+      <ComponentIndustrial>4</ComponentIndustrial>
+	  <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+	<size>(4,2)</size>
+	<comps>
+		<!--<li Class="PipeSystem.CompProperties_Resource">
+		  <pipeNet>VRE_HemogenNet</pipeNet>
+		</li>-->
+		<li Class="CompProperties_Flickable"/>
+	    <li Class="CompProperties_Breakdownable"/>
+		<li Class="PipeSystem.CompProperties_ResourceProcessor">
+		  <pipeNet>VRE_HemogenNet</pipeNet>
+		  <showBufferInfo>true</showBufferInfo>
+		  <results>
+			<li>
+			  <countNeeded>100</countNeeded>
+			  <eachTicks>300</eachTicks>
+			  <net>GF_GeneSlurryNet</net>
+			  <netCount>1</netCount>
+			  <thing>GeneSlurry</thing>
+			  <thingCount>1</thingCount>
+			</li>
+		  </results>
+		  <soundAmbient>GF_HemoConverter</soundAmbient>
+		  <notWorkingKey>GF_CantRefine</notWorkingKey>
+		</li>
+		<li Class="CompProperties_Power">
+		  <compClass>CompPowerTrader</compClass>
+		  <basePowerConsumption>500</basePowerConsumption>
+	    </li>
+		<li Class="PipeSystem.CompProperties_Resource">
+		  <pipeNet>GF_GeneSlurryNet</pipeNet>
+		</li>
+	</comps>
+  </ThingDef>
 </Defs>
