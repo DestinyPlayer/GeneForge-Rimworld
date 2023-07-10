@@ -53,7 +53,7 @@ namespace CategoricGenepacks
             foreach (var def in GF_Utility.allGeneDefs.InRandomOrder())
             {
                 //Log.Message(def.displayCategory.ToString());
-                if (def.displayCategory.ToString().Contains(GeneCat) && def.biostatArc < 1+AllowArchite)
+                if (def.displayCategory.ToString().Contains(GeneCat) && def.biostatArc < 1+AllowArchite && def.canGenerateInGeneSet && def.selectionWeight>0)
                 {
                     //Log.Message("    --Successfully found a Hemogen gene! It's " + def.ToString());
                     geneSet.AddGene(def);
