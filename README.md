@@ -8,6 +8,7 @@ So I made this.
 
 ## CHANGELOG
 
+- Version 1.5: Added a new building, the Geneslurry Hemo Converter, which turns Hemogen into Gene Slurry.
 - Version 1.4.1: Fixed a small issue where, if you don't have Ideology, the filtering would bug out.
 - Version 1.4: Added compatibility for Humanoid Alien Races, fixed some bugs, added some extra information to the Gene Forge.
 - Version 1.3.1: Removed that facility. I really cannot get it to work how I want it to to save my life.

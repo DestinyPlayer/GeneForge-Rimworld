@@ -20,6 +20,7 @@
 	</modDependencies>
 	<loadAfter>
 		<li>oskarpotocki.vanillafactionsexpanded.core</li>
+		<li>ludeon.rimworld.biotech</li>
 		<!--<li>isorex.communityframework</li>-->
 	</loadAfter>
 	<description>
