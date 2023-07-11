@@ -402,7 +402,7 @@
   <ThingDef ParentName="BuildingBase" MayRequire="vanillaracesexpanded.sanguophage">
 	<defName>GeneSlurryHemoConverter</defName>
 	<label>geneslurry hemo converter</label>
-	<description>This contraption takes the distilled Hemogen that broils inside the veins of Sanguophages, and distills it even further until it is so blended up that the only thing left is pure, genetic data in what is, unfortunately, not a particularly efficient process.\n\nRequires 100 units of Hemogen to produce a single unit of Gene Slurry.\n\nDon't drink it, it tastes like Oskar.</description>
+	<description>This contraption takes the distilled Hemogen that broils inside the veins of Sanguophages, and distills it even further until it is so blended up that the only thing left is pure, genetic data in what is, unfortunately, not a particularly efficient process.\n\nRequires 12 units of Hemogen to produce a single unit of Gene Slurry.\n\nDon't drink it, it tastes like Oskar.</description>
     <canOverlapZones>false</canOverlapZones>
     <passability>PassThroughOnly</passability>
     <fillPercent>0.3</fillPercent>
@@ -436,12 +436,12 @@
 		  <showBufferInfo>true</showBufferInfo>
 		  <results>
 			<li>
-			  <countNeeded>100</countNeeded>
-			  <eachTicks>300</eachTicks>
+			  <countNeeded>12</countNeeded>
+			  <eachTicks>2000</eachTicks>
 			  <net>GF_GeneSlurryNet</net>
 			  <netCount>1</netCount>
-			  <thing>GeneSlurry</thing>
-			  <thingCount>1</thingCount>
+			  <!--<thing>GeneSlurry</thing>
+			  <thingCount>1</thingCount>-->
 			</li>
 		  </results>
 		  <soundAmbient>GF_HemoConverter</soundAmbient>
