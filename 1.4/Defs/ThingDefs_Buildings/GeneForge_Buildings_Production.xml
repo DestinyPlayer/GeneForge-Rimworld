@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-  <ThingDef ParentName="FurnitureBase">
+  <ThingDef ParentName="BuildingBase">
     <defName>GF_GeneSlurryExtractorCorpse</defName>
     <label>gene slurry extractor</label>
     <description>This apparatus extracts Genetic Slurry from humanoid corpses and humanoid meat.\n\n(To switch what you use to extract genetic slurry from, press the button in the UI.)</description>
@@ -90,7 +90,7 @@
     </comps>
   </ThingDef>
   
-  <ThingDef ParentName="FurnitureBase">
+  <ThingDef ParentName="BuildingBase">
     <defName>GF_GeneSlurryExtractorAlien</defName>
     <label>gene slurry extractor</label>
     <description>This apparatus extracts Genetic Slurry from humanoid corpses and humanoid meat.\n\n(To switch what you use to extract genetic slurry from, press the button in the UI.)</description>
@@ -171,9 +171,9 @@
 		<uiIconPath>Things/UI/GeneExtractorAlien</uiIconPath>
 	  </li>
     </comps>
-  </ThingDef>-->
+  </ThingDef>
   
-  <ThingDef ParentName="FurnitureBase">
+  <ThingDef ParentName="BuildingBase">
     <defName>GF_GeneSlurryExtractorMeat</defName>
     <label>gene slurry extractor</label>
     <description>This apparatus extracts Genetic Slurry from humanoid corpses and humanoid meat.\n\n(To switch what you use to extract genetic slurry from, press the button in the UI.)</description>
